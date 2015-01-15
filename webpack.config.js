@@ -2,7 +2,7 @@ var BannerPlugin = require('webpack/lib/BannerPlugin');
 var version = require('./package.json').version;
 
 module.exports = {
-  entry: './index',
+  entry: import_index,
   output: {
     path: __dirname + '/build',
     filename: 'flight.js',
